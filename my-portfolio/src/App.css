@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fef5ea;
+}
+
+.App {
+  text-align: center;
+}
+
+.Applogo {
+  position: fixed;
+  position: sticky;
+  top: 1%;
+  float: left;
+  height: 6vmin;
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 40px;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.Applogo:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%);
+}
+
+/*.Logo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+
+h1 {
+  font-size: 35px;
+}
+
+h3{
+  font-size: 24.72187886279357px;
+}
+
+.Hometext, ul {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.HomeSec {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  position: sticky;
+  top: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-weight: bold;
+  background-color: transparent;
+  z-index: 1;
+}
+
+li a{
+  display: inline-flex;
+  transition: all 0.3s ease-in-out;
+  padding: 25px 40px;
+  text-decoration: none;
+  color: #201E20;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: #E0A96D;
+}
+
+.Homecontent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.Hometext {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  background-color: #E0A96D;
+}
+
+
+
+.luzon {
+  outline: 1px solid #E0A96D;
+  outline-offset: -10px;
+  filter: grayscale(100%);  
+  width: 500px;
+  height: 600px;
+  border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+box-shadow:  35px 35px 60px #efe6dc,
+             -35px -35px 60px #fffff8;
+ }
+
+ .luzon:hover {
+  filter: grayscale(0%);
+}
+ 
+
+.AboutSec, .ProjectsSec, .ContactSec {
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  color: #201E20;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fef5ea;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #201E20;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #E0A96D;
+}
